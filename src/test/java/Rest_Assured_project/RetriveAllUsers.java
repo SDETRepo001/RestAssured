@@ -17,7 +17,7 @@ public void RetriveallData() {
             when().get("https://reqres.in/api/users?page=2")
             .then().statusCode(200).log().all();
 }
-    @Test
+   // @Test
     public void retriveSpeficUserInfo() {
         given().
                 when().get("https://reqres.in/api/users/8")
@@ -28,7 +28,7 @@ public void RetriveallData() {
 //                .body("data.last_name", equalTo("Weaver"))
     }
 
-    //@Test
+    @Test
     public void createAnewUser() {
 
     HashMap data = new HashMap();
