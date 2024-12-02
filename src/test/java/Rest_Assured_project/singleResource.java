@@ -12,8 +12,7 @@ public class singleResource {
        void singleUser() {
 
         given().
-                when(). get("https://reqres.in/" +
-                        "/api/unknown/2")
+                when(). get("https://reqres.in/api/unknown/2")
                 .then().statusCode(200)
 
         .body("data.name", equalTo( "fuchsia rose" ))
