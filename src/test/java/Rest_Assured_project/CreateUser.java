@@ -24,7 +24,7 @@ public class CreateUser {
         obData.put("job", "leader" );
 
 
-        given().body(data)
+        given().body(obData)
                 .when().post("https://reqres.in/api/users")
                 .then().statusCode(201).log().body();
     }
