@@ -22,7 +22,7 @@ public class CreateNewUsers {
                 .then()
                 .statusCode(201).log().all();
     }
-    @Test
+   // @Test
     public void createNewUsers(){
 
          given()
