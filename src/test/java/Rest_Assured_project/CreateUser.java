@@ -27,6 +27,7 @@ public class CreateUser {
         given().body(obData)
                 .when().post("https://reqres.in/api/users")
                 .then().statusCode(201).log().body();
+
     }
 
 }
