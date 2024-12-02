@@ -12,13 +12,12 @@ public class singleResource {
        void singleUser() {
 
         given().
-                when(). get("https://reqres.in/" +
-                        "/api/unknown/2")
+                when(). get("https://reqres.in/api/unknown/2")
                 .then().statusCode(200)
 
         .body("data.name", equalTo( "fuchsia rose" ))
-                .body( "data.id",equalTo("2"))
-                                .body("data.year", equalTo("2001"))
+                .body( "data.id",equalTo(2))
+                                .body("data.year", equalTo(2001))
                                 .body("data.color",  equalTo("#C74375"))
                 .body("data.pantone_value", equalTo("17-2031")).
                 log().all();
