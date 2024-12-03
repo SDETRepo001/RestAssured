@@ -23,7 +23,7 @@ public class MahdiShokriyanRegisterEmail {
         jsonObject.put("email", "dfddf.holt@reqres.in");
         jsonObject.put("password", "pidddstol1!");*/
 
-       Response res = given().contentType(ContentType.JSON).body(
+        Response res = given().contentType(ContentType.JSON).body(
                         """
                                 {
                                     "email": "eve.holt@reqres.in",
@@ -33,7 +33,7 @@ public class MahdiShokriyanRegisterEmail {
                 )
                 .when().post("https://reqres.in/api/register")
                 .then().statusCode(200).extract().response();
-       res.prettyPrint();
+        res.prettyPrint();
 
 
     }
@@ -60,6 +60,33 @@ public class MahdiShokriyanRegisterEmail {
                 .body(data)
                 .when().post("https://reqres.in/api/login")
                 .then().statusCode(200).log().body();
+    }
+
+    @Test
+    void loginUnsuccessful() {
+
+        Response res = RestAssured.given().contentType(ContentType.JSON)
+                .body(
+                        """
+                                {
+                                    "email": "peter@klaven"
+                                }
+                                """
+                )
+                .when().post("https://reqres.in/api/login")
+                .then().statusCode(400).extract().response();
+        res.equals("Missing password");
+        res.prettyPrint();
+    }
+
+    @Test
+    void delayedResponse(){
+
+                given()
+                .when().get("https://reqres.in/api/users?delay=3")
+                        .then().statusCode(200).log().body();
+
+
     }
 
 
