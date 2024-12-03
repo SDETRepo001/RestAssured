@@ -1,15 +1,13 @@
-package Rest_Assured_project;
+package Rest_Assured_project.MahdiShokriyan;
 
 import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
-import org.json.JSONObject;
 import org.testng.annotations.Test;
 
 import java.util.HashMap;
 
 import static io.restassured.RestAssured.given;
-import static io.restassured.RestAssured.reset;
 
 public class MahdiShokriyanRegisterEmail {
 
