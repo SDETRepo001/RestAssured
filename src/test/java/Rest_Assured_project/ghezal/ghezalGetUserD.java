@@ -19,13 +19,9 @@ public class ghezalGetUserD {
 
 
         given()
-                .when().get("https://gorest.co.in/GET/public/v2/users/6942853")
+                .when().get("https://gorest.co.in/public/v2/users/7563378")
                 .then().statusCode( 200 )
-    .body("date.id", equalTo( 6942853 )).log().all();
-
-
-
-
+    .body("id", equalTo( 7563378 )).log().all();
 
 
     }
