@@ -2,6 +2,8 @@ package Rest_Assured_project;
 import static io.restassured.RestAssured.*;
 import static io.restassured.matcher.RestAssuredMatchers.*;
 import static org.hamcrest.Matchers.*;
+
+import io.restassured.response.Response;
 import org.testng.annotations.Test;
 
 import java.util.HashMap;
@@ -19,14 +21,18 @@ public void RetriveallData() {
 }
    // @Test
     public void retriveSpeficUserInfo() {
-        given().
-                when().get("https://reqres.in/api/users/8")
-                .then().statusCode(200)
-                .log().all();
+        Response res =  given().
+                when().get("https://reqres.in/api/users/8");
+//                .then().statusCode(200)
+//                .log().all();
 //                .body("data.first_name", equalTo("Janet"))
 //                .body("data.id", equalTo(2))
 //                .body("data.last_name", equalTo("Weaver"))
-    }
+
+                 System.out.println("Res body" + res.getBody());
+
+
+}
 
     @Test
     public void createAnewUser() {
