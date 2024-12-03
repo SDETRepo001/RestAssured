@@ -1,4 +1,4 @@
-package Rest_Assured_project;
+package Rest_Assured_project.Mathias;
 
 import org.testng.annotations.Test;
 
