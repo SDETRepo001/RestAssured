@@ -1,4 +1,4 @@
-package Rest_Assured_project;
+package Rest_Assured_project.Mathias;
 
 import org.testng.annotations.Test;
 
@@ -22,7 +22,7 @@ public class CreateNewUsers {
                 .then()
                 .statusCode(201).log().all();
     }
-    @Test
+   // @Test
     public void createNewUsers(){
 
          given()

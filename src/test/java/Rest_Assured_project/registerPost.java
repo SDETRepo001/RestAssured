@@ -27,9 +27,6 @@ public class registerPost {
         JSONObject ob = new JSONObject();
         ob.put( "email", "eve.holt@reqres.in");
         ob.put( "password", "pistol" );
-
-
-
         given().body(ob);
         when().post("https://reqres.in/api/register")
                 .then().statusCode(200).log().all()
