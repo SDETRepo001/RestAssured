@@ -6,15 +6,17 @@ import org.testng.annotations.Test;
 
 import java.util.HashMap;
 
+import static Rest_Assured_project.UtilityClass.randomEmail;
+import static Rest_Assured_project.UtilityClass.randomUserName;
 import static io.restassured.RestAssured.given;
 
 public class NewUser {
     @Test
     public static void newUser() {
         HashMap<String, String> map = new HashMap<>();
-        map.put("name", "Mathias Akowanou");
+        map.put("name", randomUserName() +" Akowanou");
         map.put("gender", "male");
-        map.put("email", "akomas300@gmail.com");
+        map.put("email", randomEmail());
         map.put("status", "active");
         String token ="Bearer e0ad33a27af2be5ef6fb60647c1f76fba10258b0373027c39f9834d16f10c821";
 
