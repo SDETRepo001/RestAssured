@@ -83,9 +83,8 @@ public class MahdiShokriyanRegisterEmail {
                 given()
                 .when().get("https://reqres.in/api/users?delay=3")
                         .then().statusCode(200).log().body();
-
-
     }
+
 
 
 }
