@@ -1,6 +1,7 @@
 package Rest_Assured_project.MahdiShokriyan;
-
+import static org.hamcrest.core.IsEqual.equalTo;
 import org.json.JSONObject;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.HashMap;
@@ -26,7 +27,10 @@ public class CreateNewUser {
                 .body(data.toString())
                 .when()
                 .post("https://gorest.co.in/public/v2/users")
-                .then().statusCode(201).log().all();
+                .then().statusCode(201)
+                .body("gender", equalTo("male"))
+                .log().all();
+
     }
 
 
