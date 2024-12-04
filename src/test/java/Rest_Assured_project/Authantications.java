@@ -104,15 +104,15 @@ public class Authantications {
     }
 
 
-    @Test
-    void handlingMyToken() {
-        String mytokon = "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";
-
-        given().header("Authorization", "Bearer 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")
-
-                .when()
-                .get("https://api.github.com/user/repos")
-                .then().statusCode(200)
-                .log().all();
-    }
+//    @Test
+//    void handlingMyToken() {
+//        String mytokon = "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";
+//
+//        //given().header("Authorization", "Bearer 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")
+//
+//                .when()
+//                .get("https://api.github.com/user/repos")
+//                .then().statusCode(200)
+//                .log().all();
+//    }
 }
