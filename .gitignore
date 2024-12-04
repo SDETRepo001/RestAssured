@@ -38,5 +38,8 @@ build/
 .DS_Store
 
 uiDesigner.xml
+misc.xml
+pom.xml
+
 pom.xml
 

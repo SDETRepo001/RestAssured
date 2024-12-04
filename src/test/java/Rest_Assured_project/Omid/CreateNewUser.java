@@ -17,8 +17,8 @@ public class CreateNewUser {
 
 
         Map data=new HashMap<String,String>();
-        data.put("name", "Omid");
-        data.put("email","OmidTest@link.test");
+        data.put("name", "Omid1");
+        data.put("email","OmidTest1@link.test");
         data.put("gender", "male");
         data.put("status", "active");
 
