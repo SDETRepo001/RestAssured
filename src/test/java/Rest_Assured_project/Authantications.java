@@ -36,6 +36,17 @@ public class Authantications {
                 .then().body("authenticated", equalTo(true));
     }
 
+    //@Test
+//    void handalingbearerAuth()
+//    {
+//        String token = "e0ad33a27af2be5ef6fb60647c1f76fba10258b0373027c39f9834d16f10c821";
+//        given().auth().oauth2(token)
+//                .when().get("https://postman-echo.com/basic-auth")
+//                .then().body("authenticated", equalTo(true));
+//    }
+
+
+    //First way
     @Test
     public static void handalingbearerAuth() {
         HashMap<String, String> map = new HashMap<>();
