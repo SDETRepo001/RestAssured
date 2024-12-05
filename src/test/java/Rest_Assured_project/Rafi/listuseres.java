@@ -36,6 +36,10 @@ void Getclassnew() {
     List<Object> titles = jsonpath.get();
 
   for(Object dueDate : titles){
+
+
+
+
       System.out.println(dueDate);
   }
 
