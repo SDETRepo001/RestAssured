@@ -1,7 +1,6 @@
-package Post_Requests;
+package Rest_Assured_project.masoom;
 
 
-import org.json.*;
 import org.testng.annotations.Test;
 import static io.restassured.RestAssured.given;
 
