@@ -13,7 +13,7 @@ public class RegisterSuccessful {
     public static void registerSuccessful(){
        /* JSONObject obj = new JSONObject();
         obj.put("email","eve.holt@reqres.in");
-        obj.put("password","pistol");*/
+        obj.put("password","pistol");*/``
 
         given().contentType(ContentType.JSON).body(
                         """
