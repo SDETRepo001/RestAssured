@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 import static io.restassured.RestAssured.given;
 
-public class AuthorsAnGet {
+public class AuthorAnGet {
 
     @Test
     void authorsAnGet(){
