@@ -6,7 +6,6 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 import org.testng.annotations.Test;
 
-import javax.swing.*;
 
 import java.util.List;
 import java.util.Map;
@@ -48,9 +47,9 @@ public class AuthorBookGet {
         for (Object data : allData) {
             // Cast data to a Map (to access key-value pairs)
             Integer id = (Integer) ((Map<String, Object>) data).get("id");
-            if (id == 69) {
+            if (id == 80) {
                 String firstName = (String) ((Map<String, Object>) data).get("firstName");
-                System.out.println("First Name for id 69: " + firstName);
+                System.out.println("First Name for id 80: " + firstName);
                 break;
             }
         }
