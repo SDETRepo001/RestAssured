@@ -1,4 +1,4 @@
-package Rest_Assured_project.Mathias;
+package Rest_Assured_project.Mathias.FakeAPI;
 
 import io.restassured.http.ContentType;
 import org.testng.annotations.Test;
