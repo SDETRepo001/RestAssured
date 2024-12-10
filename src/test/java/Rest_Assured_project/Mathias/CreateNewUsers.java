@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import java.util.HashMap;
 
 import static io.restassured.RestAssured.given;
+import static org.slf4j.MDC.put;
 
 public class CreateNewUsers {
     @Test
@@ -22,11 +23,11 @@ public class CreateNewUsers {
                 .then()
                 .statusCode(201).log().all();
     }
-   // @Test
+    @Test
     public void createNewUsers(){
 
          given()
-        .body(new HashMap <> (){{
+        .body(new HashMap<> (){{
              put("name","Mathias");
             put("job","Tester");
 

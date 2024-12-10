@@ -4,9 +4,6 @@ import io.restassured.http.ContentType;
 import org.json.JSONObject;
 import org.testng.annotations.Test;
 
-import java.util.HashMap;
-import java.util.Map;
-
 import static io.restassured.RestAssured.given;
 
 public class CreateAuthors {

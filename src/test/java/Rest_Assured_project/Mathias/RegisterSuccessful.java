@@ -27,6 +27,7 @@ public class RegisterSuccessful {
                 .then()
                 .statusCode(200)
                 .log().all();
+        System.out.println("Mathias");
     }
 
 }

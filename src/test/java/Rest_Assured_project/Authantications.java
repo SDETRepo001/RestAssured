@@ -35,7 +35,6 @@ public class Authantications {
                 .when().get("https://postman-echo.com/basic-auth")
                 .then().body("authenticated", equalTo(true));
     }
-
     //@Test
 //    void handalingbearerAuth()
 //    {
@@ -74,7 +73,6 @@ public class Authantications {
         map.put("email", "akoasasdfasdfdf@gmail.com");
         map.put("status", "active");
         String token = "Bearer e0ad33a27af2be5ef6fb60647c1f76fba10258b0373027c39f9834d16f10c821";
-
         given().header("Authorization", token)
                 .contentType(ContentType.JSON)
                 .body(map)
@@ -83,8 +81,6 @@ public class Authantications {
                 .then().statusCode(201)
                 .log().all();
     }
-
-
     @Test
     void oAuthOne() {
         given()
